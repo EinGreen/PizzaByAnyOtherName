@@ -22,16 +22,19 @@
     
     <!-- approperite title -->
     <title>HomePage</title>
+
+    <!-- linked to PIZZAstyle.css -->
+    <link rel="stylesheet" href="css/PIZZAstyle.css">
 </head>
 
 <body>
     <header>
         <!-- I guess this is the top of the website -->
-        <h1>
+        <h1 class="Homepage-Title">
             Okotoks Pizza
         </h1>
         <!-- Navigation Links, connects to other pages [probably] -->
-        <nav>
+        <nav class="navigation">
             <a href="PizzaHomePage.html">HomePage</a>
             <!-- Leads to nowhere -->
             <a href="pages/Menu.html">Menu</a>
@@ -57,16 +60,40 @@
         </center>
     </section>
     <!-- Don't worry, you won't get any copywrite claims -->
-    <section id="Pizza Images">
-        <Span>
+    <section id="Pizza-Images">
+        <Span class="hover-images">
             <center>
-                <Img src="images/CookingPizzaOnWoodburnOven.jpg" width="300px" height="250px" alt="Wood-Oven Baking Pizza, made with locally sourced ingredients"></Img>
-                <Img src="images/ProfessionalItalianPizzaChef.jpg" width="300px" height="250px" alt="Professional Italian Cuisine Chef presenting customer our freshly made Pizza"></Img>
-                <Img src="images/ProfessionallyMadePizza.jpg" width="300px" height="250px" alt="Our Pepperoni Pizza, made with the finest cheeses, the freshest tomatoes and garlic for our sauce, topped with hand-made Pepperoni from our establishment"></Img>
+                <div class="zoomIn-card">
+                    <a href="pages/AboutUs.html" >
+                        <Img src="images/CookingPizzaOnWoodburnOven.jpg" 
+                         width="300px" 
+                         height="250px" 
+                         alt="Wood-Oven Baking Pizza, made with locally sourced ingredients">
+                        </Img>
+                    </a>
+                </div>
+                <div class="zoomIn-card">
+                    <a href="pages/PickUp.html">
+                        <Img src="images/ProfessionalItalianPizzaChef.jpg" 
+                         width="300px" 
+                         height="250px" 
+                         alt="Professional Italian Cuisine Chef presenting customer our freshly made Pizza">
+                        </Img>
+                    </a>
+                </div>
+                <div class="zoomIn-card">
+                    <a href="pages/Menu.html">
+                        <Img src="images/ProfessionallyMadePizza.jpg" 
+                         width="300px" 
+                         height="250px" 
+                         alt="Our Pepperoni Pizza, made with the finest cheeses, the freshest tomatoes and garlic for our sauce, topped with hand-made Pepperoni from our establishment">
+                        </Img>
+                    </a>
+                </div>
             </center>
         </Span>
     </section>
-    <footer>
+    <footer id="Hook-Line">
         <p>Professionally made Pizza by any other name</p>
     </footer>
 </body>
