@@ -1,4 +1,10 @@
+/* for all titles */
+#topTitle {
+    text-align: center;
+}
+
 /* Pizza Homepage */
+
 div.zoomIn-card {
     display: inline-block ;
 }
@@ -12,6 +18,14 @@ div.zoomIn-card {
 }
 
 /* Natigation */
+/* made nav into a grid */
+#navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 3px;
+    text-align: center;
+}
+
 .navigation>a:link {
     color: rgb(54, 158, 158);
 }
@@ -39,10 +53,11 @@ div.container>.pizzaDescription,h4.pizzaTitle {
 }
 
 .menuCard {
+    display: inline-block;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: all 0.3s ease-in-out;
     width: 20%;
-    margin: 20px;
+    margin: 2.5%;
 }
 
 .menuCard:hover {
