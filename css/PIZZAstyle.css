@@ -48,9 +48,28 @@ div.container>.pizzaDescription,h4.pizzaTitle {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.pizzaDescription+.Price {
-    text-align: right;
+/* added shopping cart icon */
+.shoppingCartIcon {
+    width: 50%;
+    height: 50%;
+    transition: active 0.3s ease-in-out;
 }
+
+.shoppingCartIcon:hover {
+    cursor: pointer;
+}
+
+.shoppingCartIcon:active {
+    transform: scale(0.90);
+}
+
+div.addToCart {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+/* leads to nowhere cause I couldn't figure out how to do this with the a tag, nor does it do anything.
+   But I plan to add some sort of counter at the top, like with online shopping */
 
 .menuCard {
     display: inline-block;
