@@ -26,61 +26,20 @@ div.zoomIn-card {
     text-align: center;
 }
 
-.navigation>a:link {
+#navigation>a:link {
     color: rgb(54, 158, 158);
 }
 
-.navigation>a:visited {
+#navigation>a:visited {
     color: black;
 }
 
-.navigation>a:active {
+#navigation>a:active {
     background-color: rgba(126, 252, 0, 0.301);
 }
 
 /* About Us */
 section article.aboutUsDescription p{
     font-family: 'Times New Roman', Times, serif;
-}
-
-/* Menu */
-div.container>.pizzaDescription,h4.pizzaTitle {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-/* added shopping cart icon */
-.shoppingCartIcon {
-    width: 50%;
-    height: 50%;
-    transition: active 0.3s ease-in-out;
-}
-
-.shoppingCartIcon:hover {
-    cursor: pointer;
-}
-
-.shoppingCartIcon:active {
-    transform: scale(0.90);
-}
-
-div.addToCart {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-}
-/* leads to nowhere cause I couldn't figure out how to do this with the a tag, nor does it do anything.
-   But I plan to add some sort of counter at the top, like with online shopping */
-
-.menuCard {
-    display: inline-block;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: all 0.3s ease-in-out;
-    width: 20%;
-    margin: 2.5%;
-}
-
-.menuCard:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    transform: scale(1.15);
 }
 
