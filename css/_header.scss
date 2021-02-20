@@ -1,0 +1,38 @@
+// veriables
+$headerFont: Helvetica;
+
+// mixins
+@mixin aLinkRules() {
+    &:link {
+        color: rgb(54, 158, 158);
+    }
+
+    &:visited {
+        color: black;
+    }
+
+    &:active {
+        background-color: rgba(126, 252, 0, 0.301);
+    }
+}
+
+header {
+    display: grid; 
+    row-gap: 5px;
+
+    h1 {
+        font-family: Helvetica;
+        text-align: center;
+    }
+
+    #navigation {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 3px;
+        text-align: center;
+
+        a {
+            @include aLinkRules();
+        }
+    }
+}

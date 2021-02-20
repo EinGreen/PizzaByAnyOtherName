@@ -1,0 +1,78 @@
+// partials
+@import '_header.scss';
+
+// veriables
+$fontStyle: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+$mobileBackground: cornsilk;
+
+// mixins
+
+
+body {
+    background-color: $mobileBackground
+}
+
+span#card-placement {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-items: center;
+
+    .menuCard {
+        display: grid;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: all 0.3s ease-in-out;
+        width: 75%;
+        margin: 2.5%;
+        background: white;
+
+        article.container {
+
+            .pizzaDescription {
+                font-family: $fontStyle;
+            }
+
+            .pizzaTitle {
+                font-family: $fontStyle;
+            }
+
+            p.price {
+                text-align: left;
+            }
+        }
+    }
+}
+
+div.addToCart {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+
+    .shoppingCartIcon {
+        width: 50%;
+        height: 50%;
+        transition: active 0.3s ease-in-out;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:active {
+            transform: scale(0.90);
+        }
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        background-color: gainsboro;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    
+    .menuCard:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        transform: scale(1.15);
+    }
+}
+

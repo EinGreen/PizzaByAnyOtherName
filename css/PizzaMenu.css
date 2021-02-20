@@ -1,63 +1,108 @@
-body {
-    background-color: cornsilk;
+header {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 5px;
 }
 
-div.container>.pizzaDescription,h4.pizzaTitle {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+header h1 {
+  font-family: Helvetica;
+  text-align: center;
+}
+
+header #navigation {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -webkit-column-gap: 3px;
+          column-gap: 3px;
+  text-align: center;
+}
+
+header #navigation a:link {
+  color: #369e9e;
+}
+
+header #navigation a:visited {
+  color: black;
+}
+
+header #navigation a:active {
+  background-color: rgba(126, 252, 0, 0.301);
+}
+
+body {
+  background-color: cornsilk;
 }
 
 span#card-placement {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    justify-items: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: center;
 }
 
-.menuCard {
-    display: grid;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: all 0.3s ease-in-out;
-    width: 75%;
-    margin: 2.5%;
-    background: white;
+span#card-placement .menuCard {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 75%;
+  margin: 2.5%;
+  background: white;
 }
 
-
-
-/* added shopping cart icon */
-.shoppingCartIcon {
-    width: 50%;
-    height: 50%;
-    transition: active 0.3s ease-in-out;
+span#card-placement .menuCard article.container .pizzaDescription {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
-.shoppingCartIcon:hover {
-    cursor: pointer;
+span#card-placement .menuCard article.container .pizzaTitle {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
-.shoppingCartIcon:active {
-    transform: scale(0.90);
+span#card-placement .menuCard article.container p.price {
+  text-align: left;
 }
 
 div.addToCart {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  justify-items: center;
 }
-/* leads to nowhere cause I couldn't figure out how to do this with the a tag, nor does it do anything.
-   But I plan to add some sort of counter at the top, like with online shopping */
+
+div.addToCart .shoppingCartIcon {
+  width: 50%;
+  height: 50%;
+  -webkit-transition: active 0.3s ease-in-out;
+  transition: active 0.3s ease-in-out;
+}
+
+div.addToCart .shoppingCartIcon:hover {
+  cursor: pointer;
+}
+
+div.addToCart .shoppingCartIcon:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
 
 @media only screen and (min-width: 600px) {
-    body {
-        background-color: gainsboro;
-    }
-    /* still applies for desktop */
+  body {
+    background-color: gainsboro;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
-    
-    .menuCard:hover {
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-        transform: scale(1.15);
-    }
-    /* since hover doesn't really work on mobile, I moved it to desktop exclusively */
+  .menuCard:hover {
+    -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
 }
+/*# sourceMappingURL=PizzaMenu.css.map */

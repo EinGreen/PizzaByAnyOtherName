@@ -1,45 +1,59 @@
-/* for all titles */
-#topTitle {
-    text-align: center;
+header {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 5px;
 }
 
-/* Pizza Homepage */
+header h1 {
+  font-family: Helvetica;
+  text-align: center;
+}
+
+header #navigation {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -webkit-column-gap: 3px;
+          column-gap: 3px;
+  text-align: center;
+}
+
+header #navigation a:link {
+  color: #369e9e;
+}
+
+header #navigation a:visited {
+  color: black;
+}
+
+header #navigation a:active {
+  background-color: rgba(126, 252, 0, 0.301);
+}
 
 div.zoomIn-card {
-    display: inline-block ;
+  display: inline-block;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-.zoomIn-card {
-    transition: all 0.3s ease-in-out;
+div.zoomIn-card:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
 }
 
-.zoomIn-card:hover {
-    transform: scale(1.15);
+iframe.cheeseVid {
+  width: 85%;
+  height: 355px;
 }
 
-/* Natigation */
-/* made nav into a grid */
-#navigation {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 3px;
-    text-align: center;
+section article.aboutUsDescription p {
+  font-family: "Times New Roman", Times, serif;
 }
 
-#navigation>a:link {
-    color: rgb(54, 158, 158);
+@media only screen and (min-width: 600px) {
+  iframe.cheeseVid {
+    width: 95%;
+  }
 }
-
-#navigation>a:visited {
-    color: black;
-}
-
-#navigation>a:active {
-    background-color: rgba(126, 252, 0, 0.301);
-}
-
-/* About Us */
-section article.aboutUsDescription p{
-    font-family: 'Times New Roman', Times, serif;
-}
-
+/*# sourceMappingURL=PIZZAstyle.css.map */

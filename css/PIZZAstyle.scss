@@ -1,0 +1,42 @@
+// partials
+@import '_header.scss';
+
+// veriables
+$fontStyle: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+$aboutFont: 'Times New Roman', Times, serif;
+$mobileBackground: cornsilk;
+
+// mixins
+@mixin floatHover($scale) {
+    transform: scale($scale);
+}
+
+// Pizza Homepage
+div.zoomIn-card {
+    display: inline-block ;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        @include floatHover(1.15)
+    }
+}
+
+iframe.cheeseVid {
+    width: 85%;
+    height: 355px;
+}
+
+// About Us
+section article.aboutUsDescription p{
+    font-family: $aboutFont;
+}
+
+@media only screen and (min-width: 600px) {
+    iframe.cheeseVid {
+        width: 95%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    
+}
